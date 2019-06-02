@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   font-size: 1.4em;
+  text-align: center;
+  margin-top: 10px;
 `
 const Hamburger = () => (
   <Container>

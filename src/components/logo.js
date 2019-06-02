@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const LogoWrapper = styled(Img)`
   width: 190px;
-  margin: 0 auto;
+  
 `
 
 const Logo = () => (

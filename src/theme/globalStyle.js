@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
+
     html {
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
