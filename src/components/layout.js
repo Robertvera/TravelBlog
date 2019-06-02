@@ -8,14 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components";
 import Header from "./header"
-import './global.css'
+import { GlobalStyle } from '../theme/globalStyle';
 
-const HeaderComponent = styled(Header)`
-  margin: 0;
-  color : red;
-`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,7 +25,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <HeaderComponent siteTitle={data.site.siteMetadata.title} />
+        <GlobalStyle />
+        <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
